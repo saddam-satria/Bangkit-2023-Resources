@@ -1,0 +1,1 @@
+DATABASE_URL=driver+driver://username:password@host/db
