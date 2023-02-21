@@ -84,7 +84,7 @@ li {
     align-items: center;
 }
 .header-content .header-title h1 a{
-    color: rgb(43, 30, 236);
+    color: blue;
 }
 
 .header-content .humberger-menu{
@@ -109,7 +109,7 @@ li {
 }
 
 .header-content .nav-list ul li a {
-    color: rgb(43, 30, 236);
+    color: blue;
 }
 .header-content .nav-list ul li a:hover {
     color: rgba(44, 30, 236, 0.856);
@@ -127,11 +127,17 @@ li {
     margin: 1rem 0px;
     margin-bottom: 7rem;
 }
+/* End Main Content */
+
+
+/* Profile Content */
+
 
 
 .main-content .profile-article {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .main-content .profile-article .profile-image{
@@ -146,23 +152,53 @@ li {
 
 .main-content .profile-article h1 {
     padding: 10px 0px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .main-content .profile-article .profile-text ul{
     margin: 2rem 0px;
 }
 
+.main-content .profile-article .profile-social-content {
+   position: fixed;
+   right: 0;
+   top: 0;
+   height: 100%;
+   display: flex;
+   align-items: center;
+ }
+ 
 
-.main-content .profile-article .profile-social-button > a{
+.main-content .profile-article .profile-social-content .profile-social-modal {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 15px 0px 0px 15px;
+}
+ 
+
+
+.main-content .profile-article .profile-social-content .profile-social-modal > a{
    font-size: 1.5em;
    padding: 5px;
+   color: white;
 }
 
-.main-content .profile-article .profile-social-button > a:hover{
-   color: rgb(0, 0, 12);
+
+
+
+.main-content .profile-article .profile-social-content .profile-social-modal > a:hover{
+    color: rgba(231, 231, 243, 0.856);
 }
-/* End Main Content */
+
+
+/* End Profile Content */
+
+
+
 
 /* Footer */
 
@@ -178,6 +214,8 @@ footer{
 .footer span {
     font-weight: bolder;
 }
+
+
 
 /* Responsive */
 
@@ -213,6 +251,10 @@ footer{
         margin: 0px;
         margin-left: auto;
         gap: 0px 20px;
+    }
+
+    .main-content {
+        padding: 10rem 0px;
     }
     
     .main-content .profile-article{
