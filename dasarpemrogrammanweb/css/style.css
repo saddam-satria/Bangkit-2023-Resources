@@ -91,6 +91,7 @@ li {
     margin-left: auto;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 .header-content .humberger-menu .hamburger-line{
     padding: 2px 15px;
@@ -170,7 +171,6 @@ li {
  
 
 .main-content .profile-article .profile-social-content .profile-social-modal {
-
     display: flex;
     flex-direction: column;
     gap: 10px 0px;
