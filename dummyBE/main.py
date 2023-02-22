@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-# from routes import routing
+from routes import routing
 # from config.database import db_engine
 from fastapi_sqlalchemy import DBSessionMiddleware
 import os
@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = FastAPI()
-# routing(app)
+routing(app)
 # db_engine.connect()
 # app.add_middleware(DBSessionMiddleware,db_url=os.environ["DATABASE_URL"])
 
